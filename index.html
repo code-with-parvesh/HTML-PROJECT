@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>About Us - CarCollector Showcase</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        header {
+            margin: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.25);
+
+        }
+
+        .logo {
+            width: 10%;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            width: 10%;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 20px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #cc36ab;
+            color: white;
+        }
+
+        .middle {
+            width: 75%;
+        }
+
+        /* CSS for hero section and running text */
+        .hero-section {
+            margin: 10px;
+            background-image: url('/img/lambo.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 550px;
+            position: relative;
+            color: white;
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.25);
+
+        }
+
+        .running-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .running-text p {
+            font-size: 50px;
+        }
+
+
+        @keyframes runtext {
+            0% {
+                transform: translateX(100%);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateX(-100%);
+                opacity: 1;
+            }
+        }
+
+        .running-text p {
+            animation: runtext 15s linear infinite;
+        }
+
+        /* category start  */
+        /* Css for car part 1 */
+
+
+
+        #row1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sports-car {
+            margin-right: 20px;
+        }
+
+        #suv {
+            margin-left: 20px;
+        }
+
+        img {
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .anc {
+            color: #000;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .anc:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        #row1 section {
+            margin-bottom: 40px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.498);
+            border-radius: 10px;
+            width: 400px;
+            height: 550px;
+
+        }
+
+        /* Css for containers */
+
+        .our-team {
+            margin: 10px;
+            background-image: url("https://www.hdcarwallpapers.com/walls/porsche_911_carrera_4s_2019_4k_interior-HD.jpg");
+            background-size: cover;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.25);
+
+        }
+
+        .row-team section {
+            margin-bottom: 40px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.498);
+            border-radius: 10px;
+            width: 400px;
+            height: 550px;
+        }
+
+        .row-team {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .team-member1 {
+            margin-right: 20px;
+        }
+
+        .team-member3 {
+            margin-left: 20px;
+        }
+
+        img {
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+
+
+        /* css of collection */
+        .collection-section {
+            background-image: url("https://i.pinimg.com/originals/23/40/1a/23401ab220b15c91dd173c69e45de304.jpg");
+            background-size: cover;
+            padding: 40px 0;
+            padding: 40px 0;
+            text-align: center;
+            margin: 10px;
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.25);
+
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .collection-story {
+            width: 30%;
+            margin-bottom: 40px;
+            margin: 0 10px;
+            padding: 20px;
+            background-size: cover;
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            text-align: left;
+            position: relative;
+
+        }
+
+        .top-collection {
+            width: 96%;
+            margin: 10px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            text-shadow: 10cm;
+        }
+
+        .section1,
+        .section2,
+        .section3,
+        .section4 {
+            width: 20%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            text-shadow: 10cm;
+        }
+
+
+        /* Style the mission section */
+        .mission-section {
+            margin: 10px;
+            background-image: url("./img.jpg");
+            background-size: cover;
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.25);
+
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .mission-container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .mission-content {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            color: #fff;
+
+        }
+
+        .mission-section h2 {
+            font-size: 32px;
+            color: #fff;
+        }
+
+        .mission-section p {
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .collector-story-section {
+            margin: 10px;
+            background-image: url("https://projectkahn.com/cdn/shop/collections/Wheels_Banner-360.jpg?v=1602930047");
+            background-size: cover;
+            padding: 40px 0;
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.25);
+
+            text-align: center;
+        }
+
+        .collector-story-container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .collector-story-content {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 0;
+            color: #fff;
+        }
+
+        .collector-story-section h2 {
+            font-size: 32px;
+        }
+
+        .collector-story-section p {
+            font-size: 20px;
+        }
+
+        .scrolling-text {
+            font-size: 18px;
+            color: #ffea00;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            text-align: center;
+        }
+
+        footer .quick-actions {
+            width: 20%;
+            text-align: center;
+        }
+
+        footer .middle-footer {
+            width: 60%;
+
+        }
+
+        footer .middle-footer .social-media {
+            padding: 10px;
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        .quick-actions li {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .quick-actions li {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .quick-actions a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .quick-actions a:hover {
+            color: red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./logo.jpeg" alt="CarCollector Showcase Logo">
+        </div>
+        <div class="middle">
+            <h1>CarCollector Showcase</h1>
+            <nav>
+                <ul>
+                     
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./collection.html">Collection</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./sgin.html">Sgin</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+            target="_blank" class="fa fa-twitter"></a>
+        </div>
+    </header>
+    <section>
+        <div class="hero-section" id="background-slideshow">
+            <div class="running-text" style="text-align: center;">
+                <p> Discover Automotive Elegance: <br> Where Classics Revive <br> and Stories Drive.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="collector-story-section">
+        <div class="collector-story-container">
+            <div class="collector-story-content">
+                <h2>The Collector's Story</h2>
+                <p>Founded by John Smith, a lifelong car enthusiast, CarCollector Showcase is the culmination of decades
+                    spent acquiring, restoring, and cherishing classic and rare cars. John's unwavering dedication to
+                    preserving automotive history led to the creation of this one-of-a-kind collection.</p>
+                <p>John's passion for cars began at an early age when he inherited his grandfather's vintage Ford Model
+                    T. He spent countless hours in the garage, learning the intricacies of automotive mechanics and
+                    craftsmanship. As the years went by, his collection expanded, and he embarked on a mission to rescue
+                    and restore forgotten gems from various eras.</p>
+                <p>Today, CarCollector Showcase stands as a testament to John's relentless pursuit of automotive
+                    excellence. The collection features a wide array of vehicles, from iconic classics like the 1967
+                    Shelby GT500 to rare finds like the 1954 Mercedes-Benz 300SL Gullwing. Each car tells a unique
+                    story, and John's commitment to preserving their history is at the core of this passion project.</p>
+                <p>Visitors to CarCollector Showcase not only experience the beauty of these automobiles but also
+                    witness the journey of one man's lifelong dedication to the art of car collecting. It's a tribute to
+                    the automotive world and an inspiration to enthusiasts around the globe.</p>
+                <p class="scrolling-text">
+                    <marquee behavior="scroll" direction="left" scrollamount="8">Explore the unique stories of our
+                        vintage cars - each one a piece of automotive history! Visit us today to immerse yourself in the
+                        world of automotive excellence.</marquee>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="collection-section">
+        <div class="top-collection">
+
+            <h1>About CarCollector Showcase</h1>
+            <p>Welcome to CarCollector Showcase, your destination for exploring a world of extraordinary cars.
+                Our passion
+                for automotive excellence drives us to curate and present a unique collection of remarkable vehicles
+                from
+                different eras and brands.</p>
+        </div>
+
+        <div class="container">
+            <div class="collection-story section1">
+                <h1> The Beginning</h1>
+                <p>Our collection journey started with a single classic car that we stumbled upon at a local car show.
+                    It was love at first sight, and we knew we had to bring it into our collection. This car, a 1967
+                    Ford Mustang GT, became the cornerstone of our passion for classic automobiles. We spent years
+                    meticulously restoring it to its original glory, preserving its unique character and history.</p>
+            </div>
+            <div class="collection-story section2">
+                <h1> Expanding Horizons</h1>
+                <p>As our passion grew, so did our collection. We began actively searching for rare and iconic vehicles
+                    from different eras and brands, each with its unique story and charm. Our collection now boasts an
+                    array of classics, from a timeless 1955 Chevrolet Bel Air to a powerful 1970 Dodge Charger R/T. Each
+                    car holds a piece of automotive history and continues to inspire us every day.</p>
+            </div>
+            <div class="collection-story section3">
+                <h1> Restorations and Renovations</h1>
+                <p>Many of our cars required extensive restorations and renovations to bring them back to their former
+                    glory. It's a labor of love, and we take pride in every restored vehicle. From reupholstering the
+                    interior of a classic Cadillac Fleetwood to rebuilding the engine of a vintage Porsche 911, we've
+                    invested countless hours in ensuring that our collection stands as a testament to the art of
+                    automotive restoration.</p>
+            </div>
+            <div class="collection-story section4">
+                <h1>Sharing the Passion</h1>
+                <p>Our collection isn't just for us; it's for enthusiasts and car lovers around the world. We open our
+                    doors to share our passion, host events, and inspire the next generation of collectors. Whether it's
+                    a charity car show, a guided tour of our vintage automobiles, or an educational workshop on
+                    automotive history, we're dedicated to kindling the same fervor for cars that brought us here.</p>
+            </div>
+        </div>
+    </div>
+    <div class="mission-section">
+        <div class="mission-container">
+            <div class="mission-content">
+                <h2>Our Mission</h2>
+                <p>Our mission is to share the beauty, history, and craftsmanship of automobiles with fellow
+                    enthusiasts. We
+                    aim to provide a platform for connecting with car aficionados, sharing knowledge, and celebrating
+                    the
+                    timeless art of automotive design.</p>
+                <p>At the heart of our mission is a commitment to preserving and promoting the legacy of exceptional
+                    vehicles. We believe that every car tells a story, and it's our privilege to share these stories
+                    with the
+                    world. From vintage classics to modern marvels, our collection embodies the passion and dedication
+                    of
+                    car enthusiasts throughout history.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-team">
+        <div class="top-collection">
+
+            <h1>Our Team</h1>
+            <p>We are a team of passionate individuals who share John's love for cars. Each member brings their unique
+                expertise in car restoration, research, and presentation to make this collection a true automotive
+                treasure
+                trove.</p>
+        </div>
+        <div class="row-team">
+            <section class="team-member1">
+                <a href="https://www.linkedin.com/in/john-doe-0056821b9" target="_blank"> <img
+                        src="https://cannabiswebsite11.info/wp-content/uploads/2016/06/team-1.jpg" alt="Card 1 Image"
+                        width="100%" height="250px"></a>
+                <h1>John Doe</h1>
+                <h3>Car Restoration Expert</h3>
+                <p>A car expert, like John Doe, possesses extensive knowledge and skills in automotive mechanics,
+                    maintenance, and restoration, ensuring vehicles' optimal performance and condition..</p>
+
+            </section>
+            <section class="team-member2">
+                <img src="https://www.portotheme.com/wordpress/porto/business-consulting3/wp-content/uploads/sites/204/2021/02/team-1.jpg"
+                    alt="Card 1 Image" width="100%" height="250px">
+                <h1>Mike Johnson</h1>
+                <h3>Presentation Guru</h3>
+                <p>A presentation guru, like Mike Johnson, excels in crafting and delivering compelling, visually
+                    engaging presentations, effectively communicating complex information to diverse audiences.</p>
+            </section>
+            <section class="team-member3">
+                <a href="https://in.linkedin.com/in/jane-smith-a9b8a4148?trk=pub-pbmap" target="_blank"> <img
+                        src="https://bidinnovacion.org/economiacreativa/wp-content/uploads/2014/10/speaker-3.jpg"
+                        alt="Card 1 Image" width="100%" height="250px"> </a>
+                <h1> Jane Smith</h1>
+                <h3>Research Specialist</h3>
+                <p>A research specialist, such as Jane Smith, excels in gathering and analyzing data, providing critical
+                    insights and knowledge in their field of expertise</p>
+
+            </section>
+        </div>
+    </div>
+
+    <main>
+        <h1 style="text-align: center;">Below Is Car Collection Category</h1>
+        <div id="row1">
+            <section id="sports-car">
+                <a href="https://en.wikipedia.org/wiki/Sports_car" target="_blank"><img
+                        src="https://d2n4wb9orp1vta.cloudfront.net/cms/brand/CW/2022-CW/0622-cw-news-McLaren-Artura-GT41.jpg"
+                        alt="Card 1 Image" width="100%" height="250px"></a>
+                <h2>Sports Cars</h2>
+                <p>Sports cars are known for their high performance, speed, and often have two-seater or 2+2
+                    configurations. They focus on driving experience and style.</p>
+                <a href="/CarCategory/sportscars.html" target="_blank" class="anc">Learn more about Sports Car</a>
+            </section>
+
+            <section id="Luxury">
+                <a href="https://en.wikipedia.org/wiki/Luxury_car" target="_blank"><img
+                        src="https://www.carexpert.com.au/app/uploads/2023/01/2023-BMW-7-Series-740i-i7-xDrive60-HERO-16x9-1.jpg"
+                        alt="Card 1 Image" width="100%" height="250px"></a>
+                <h2>Luxury Cars</h2>
+                <p> Luxury cars are high-end vehicles with premium features, materials, and advanced technology. They
+                    offer a combination of comfort and style.</p>
+                <a href="/CarCategory/luxurycar.html" target="_blank" class="anc">Learn more about Luxury Cars</a>
+            </section>
+
+            <section id="suv">
+                <a href="https://en.wikipedia.org/wiki/SUV" target="_blank"><img
+                        src="https://editorial.pxcrush.net/carsales/general/editorial/lamborghini-urus-1-fsn1.jpg?width=1024&height=683"
+                        alt="Card 1 Image" width="100%" height="250px"></a>
+                <h2>SUVs (Sport Utility Vehicles)</h2>
+                <p>SUVs are versatile vehicles designed for both on-road and off-road use. They are known for their
+                    spacious interiors and elevated driving positions.</p>
+                <a href="/CarCategory/suvs.html" target="_blank" class="anc">Know more about SUVs (Sport Utility Vehicles)</a>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="quick-actions">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="collection.html">Collection</a></li>
+
+
+            </ul>
+        </div>
+        <div class="middle-footer">
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+                target="_blank" class="fa fa-twitter"></a>
+            </div>
+            <div class="copyright">
+                &copy; 2023 CarCollector Showcase. All rights reserved.
+                <nav>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="contact-details">
+            <p>Email: contact@example.com</p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Main St, City, Country</p>
+        </div>
+    </footer>
+    <script>
+        const backgroundImages = ['/img/img1.jpg', '/img/img2.jpg', '/img/img3.jpg', '/img/img4.jpg', '/img/img5.jpg', '/img/img6.jpg'];
+        let currentImageIndex = 0;
+        const slideshowContainer = document.getElementById('background-slideshow');
+
+        function changeBackgroundImage() {
+            currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+            const imageUrl = backgroundImages[currentImageIndex];
+            slideshowContainer.style.backgroundImage = `url(${imageUrl})`;
+        }
+
+        setInterval(changeBackgroundImage, 20000);
+    </script>
+</body>
+
+</html>

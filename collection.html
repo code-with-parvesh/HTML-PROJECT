@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Antique and Classic Car Collection</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        header {
+            margin: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 10%;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            width: 10%;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 20px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #cc36ab;
+            color: white;
+        }
+
+        .middle {
+            width: 75%;
+        }
+
+        /* css for collection */
+        .collection {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+        }
+
+        .collection .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .car-section {
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            width: 400px;
+            height: 450px;
+            margin: 30px;
+        }
+
+        .collection img {
+            max-width: 100%;
+            height: 250px;
+            width: 100%;
+            border-radius: 10px 10px 0px 0px;
+
+        }
+
+        .car-section {
+
+            transition: transform 0.5s;
+        }
+
+        .car-section:hover {
+            transform: scale(1.5);
+        }
+
+        .collection h2 {
+            font-size: 20px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .collection p {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        /* css for footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            text-align: center;
+        }
+
+        footer .quick-actions {
+            width: 20%;
+            text-align: center;
+        }
+
+        footer .middle-footer {
+            width: 60%;
+
+        }
+
+        footer .middle-footer .social-media {
+            padding: 10px;
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        .quick-actions li {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .quick-actions li {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .quick-actions a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .quick-actions a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="CarCollector Showcase Logo">
+        </div>
+        <div class="middle">
+            <h1>CarCollector Showcase</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./collection.html">Collection</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+    </header>
+    <div class="collection">
+        <h1>Antique and Classic Car Collection</h1>
+        <div class="flex">
+            <div class="car-section">
+                <img src="https://c4.wallpaperflare.com/wallpaper/283/737/95/1930-ford-model-open-cab-pickup-76di-retro-pictures-free-wallpaper-preview.jpg"
+                    alt="1930 Ford Model A">
+                <h2>1930 Ford Model A</h2>
+                <p>The 1930 Ford Model A is a symbol of the Roaring Twenties. With its distinctive style, this car
+                    represents
+                    the transition from the Model T era. Its 3.3L inline-four engine produced 40 hp. It's known for its
+                    iconic
+                    grille and classic design elements.</p>
+                <p> <a href="/Collection/ford1930.html"> Learn more about </a></p>
+            </div>
+            <div class="car-section">
+                <img src="https://w0.peakpx.com/wallpaper/585/954/HD-wallpaper-1969-chevrolet-camaro-z28-07-2012-car-chevrolet-camaro-10.jpg"
+                    alt="1969 Chevrolet Camaro">
+                <h2>1969 Chevrolet Camaro</h2>
+                <p>The '69 Camaro is an American muscle icon. With its sleek design and V8 engine options, it's a dream
+                    for car
+                    enthusiasts. The SS model packed a powerful 6.5L V8. The Camaro's aggressive look and impressive
+                    power have
+                    made it a classic.</p>
+                <p> <a href="/Collection/1969Camaro.html"> Learn more about </a></p>
+
+            </div>
+            <div class="car-section">
+                <img src="https://w0.peakpx.com/wallpaper/457/863/HD-wallpaper-chevy-bel-air-1957-chevy-1957-bel-air.jpg"
+                    alt="1957 Chevrolet Bel Air">
+                <h2>1957 Chevrolet Bel Air</h2>
+                <p>The '57 Bel Air is a timeless classic known for its unique tailfins and iconic styling. Its V8 engine
+                    provided impressive performance for its time. This car represents the golden era of American
+                    automobiles.
+                <p> <a href="/Collection/1957BelAir.html"> Learn more about </a></p>
+
+                </p>
+            </div>
+            <div class="car-section">
+                <img src="https://journal.classiccars.com/media/2021/03/24904960-1962-jaguar-e-type-std.jpg"
+                    alt="1961 Jaguar E-Type">
+                <h2>1961 Jaguar E-Type</h2>
+                <p>The 1961 Jaguar E-Type, often called the most beautiful car ever made, boasts a 3.8L inline-six
+                    engine and
+                    stunning design. It epitomizes British craftsmanship and is an icon of the 1960s.</p>
+                <p> <a href="/Collection/1961Jaguar.html"> Learn more about </a></p>
+
+            </div>
+            <div class="car-section">
+                <img src="https://m.media-amazon.com/images/I/71-1GMTahHL._AC_UF1000,1000_QL80_.jpg"
+                    alt="1934 Duesenberg Model J">
+                <h2>1934 Duesenberg Model J</h2>
+                <p>The Duesenberg Model J is a masterpiece of engineering, featuring a massive 6.9L straight-eight
+                    engine,
+                    luxury, and performance. It's a symbol of the pre-war luxury and elegance.</p>
+                <p> <a href="/Collection/Duesenberg.html"> Learn more about </a></p>
+
+            </div>
+            <div class="car-section">
+                <img src="https://i.insider.com/5ed1316a3ad861134d12f912?width=1136&format=jpeg" alt="1953 Corvette C1">
+                <h2>1953 Corvette C1</h2>
+                <p>The first-ever Corvette, the C1 is a legend with its sleek, fiberglass body and a Blue Flame
+                    inline-six
+                    engine. It's an American sports car icon.</p>
+                <p> <a href="/Collection/CorvetteC1.html"> Learn more about </a></p>
+
+            </div>
+            <div class="car-section">
+                <img src="https://ferraris-online.com/wp-content/uploads/2019/05/P002Web-26.jpg"
+                    alt="1928 Bugatti Type 35">
+                <h2>1928 Bugatti Type 35</h2>
+                <p>The Bugatti Type 35 is an iconic race car, powered by a supercharged 2.0L straight-eight engine. It
+                    dominated
+                    the Grand Prix racing scene in the late 1920s.</p>
+                <p> <a href="/Collection/1928Bugatti.html"> Learn more about </a></p>
+
+            </div>
+            <div class="car-section">
+                <img src="https://www.motortrend.com/uploads/sites/21/2019/08/1949-tucker-model-48-red.jpg"
+                    alt="1948 Tucker 48">
+                <h2>1948 Tucker 48</h2>
+                <p>The Tucker 48 is a rare gem with a distinct center headlight and innovative features like a rear
+                    engine and a
+                    padded dashboard. It's a symbol of post-war automotive innovation.</p>
+                <p> <a href="/Collection/1948Tucker.html"> Learn more about </a></p>
+
+            </div>
+            <div class="car-section">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/1936_Mercedes-Benz_500K_Special_Roadster_photo7.JPG"
+                    alt="1936 Mercedes-Benz 500K">
+                <h2>1936 Mercedes-Benz 500K</h2>
+                <p>The 1936 Mercedes-Benz 500K is a symbol of elegance with its supercharged 5.0L straight-eight engine,
+                    luxurious interior, and stunning lines. It's a classic beauty from the pre-war era.</p>
+                <p> <a href="/Collection/MercedesBenz500k.html"> Learn more about </a></p>
+
+            </div>
+            <div class="car-section">
+                <img src="https://media.goodingco.com/image/upload/c_fill,g_auto,q_88,w_1590/v1/Prod/PB21%20-%20Pebble%20Beach%20Auctions%202021/626%20%E2%80%94%C2%A01964%20Aston%20Martin%20DB5/1964_Aston_Martin_DB5_001_erdrob"
+                    alt="1964 Aston Martin DB5">
+                <h2>1964 Aston Martin DB5</h2>
+                <p>The 1964 Aston Martin DB5 gained fame as James Bond's car. This British classic features a 4.0L
+                    inline-six
+                    engine, timeless styling, and an array of gadgets. It's the epitome of sophistication and spy
+                    intrigue.</p>
+                <p> <a href="/Collection/AstonMartinDB5.html"> Learn more about </a></p>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+
+        <div class="quick-actions">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./collection.html">Collection</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="middle-footer">
+            <div class="social-media">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+            <div class="copyright">
+                &copy; 2023 CarCollector Showcase. All rights reserved.
+                <nav>
+                    <ul>
+                        <li><a href="./privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="contact-details">
+            <p>Email: contact@example.com</p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Main St, City, Country</p>
+        </div>
+    </footer>
+</body>
+
+</html>

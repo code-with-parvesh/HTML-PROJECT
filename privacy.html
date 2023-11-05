@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+             
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Privacy Policy</h1>
+    </div>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p id="last-updated">Last Updated: [Date]</p>
+
+        <p>Your privacy is important to us. This Privacy Policy explains how we collect, use, and disclose your personal information when you use our services. By using our services, you consent to the practices described in this policy.</p>
+
+        <!-- Rest of your privacy policy content -->
+        <h2>Information We Collect</h2>
+        <p>We may collect the following types of information:</p>
+        <ul>
+            <li>Personal Information: This may include your name, email address, and other contact information you provide when using our services.</li>
+            <li>Usage Information: We may collect information about how you interact with our website or application, such as your IP address, browser type, and pages visited.</li>
+            <li>Cookies and Tracking Technologies: We use cookies and similar tracking technologies to enhance your user experience and analyze user behavior on our platform.</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>We may use your information for the following purposes:</p>
+        <ul>
+            <li>Personalized Experience: To provide you with a personalized experience and content tailored to your preferences.</li>
+            <li>Communication: To communicate with you, respond to your inquiries, and provide updates about our services.</li>
+            <li>Analytics: To analyze and improve our services, including user behavior and platform performance.</li>
+        </ul>
+
+        <h2>Sharing Your Information</h2>
+        <p>We may share your information with the following parties:</p>
+        <ul>
+            <li>Service Providers: We may share your information with trusted service providers who assist us in delivering our services.</li>
+            <li>Legal Requirements: We may disclose your information to comply with legal obligations, such as responding to a subpoena or court order.</li>
+        </ul>
+
+        <h2>Your Choices</h2>
+        <p>You have choices regarding the collection and use of your information:</p>
+        <ul>
+            <li>Opt-Out: You can opt-out of certain data collection by adjusting your browser settings or account preferences.</li>
+            <li>Contact Us: If you have questions or requests regarding your data, please contact us through the provided contact information below.</li>
+        </ul>
+
+        <h2>Security</h2>
+        <p>We take appropriate measures to protect your information. However, no method of transmission over the internet is 100% secure. We cannot guarantee the absolute security of your data.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. The latest version will be posted on this page with the updated date. We encourage you to review this policy periodically for any changes.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us at [Your Contact Information].</p>
+    </div>
+    <div class="footer">
+        &copy; <span id="current-year"></span>CarCollector Showcase | <a style="color: red;" href="mailto:contact@ccshowcase.com">contact@ccshowcase.com</a>
+    </div>
+
+    <script>
+        // JavaScript to set the current date and year
+        const currentDate = new Date();
+        const currentYear = currentDate.getFullYear();
+        const lastUpdatedElement = document.getElementById("last-updated");
+        const currentYearElement = document.getElementById("current-year");
+
+        if (lastUpdatedElement) {
+            lastUpdatedElement.textContent = `Last Updated: ${currentDate.toDateString()}`;
+        }
+
+        if (currentYearElement) {
+            currentYearElement.textContent = currentYear;
+        }
+    </script>
+</body>
+</html>
